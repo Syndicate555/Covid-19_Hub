@@ -1,8 +1,19 @@
 import React from "react";
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
+import "./Cards.module.css";
 const Cards = (props) => {
   console.log(props);
-  return <h1>Cards</h1>;
+  return (
+    <div className="container">
+      <Grid container spacing={3} justify="center">
+        <Grid item component={Card}>
+          <CardContent>
+            <Typography></Typography>
+          </CardContent>
+        </Grid>
+      </Grid>
+    </div>
+  );
 };
 
 export default Cards;
