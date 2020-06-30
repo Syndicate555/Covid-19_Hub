@@ -1,9 +1,10 @@
 import React from "react";
-
 import "./App.css";
 
-function App() {
-  return <div>Hello World</div>;
+class App extends React.Component {
+  render() {
+    return <div>Hello World</div>;
+  }
 }
 
 export default App;
