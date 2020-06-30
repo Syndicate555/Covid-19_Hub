@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import styles from "./App.css";
 import Cards from "./components/Cards/Cards";
 import Chart from "./components/Chart/Chart";
 import CountryPicker from "./components/CountryPicker/CountryPicker";
