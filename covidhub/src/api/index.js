@@ -5,7 +5,9 @@ const country = "https://covid19.mathdro.id/api/countries";
 
 export const fetchData = async () => {
   try {
-    const { data } = await axios.get(stats);
+    const {
+      data: { confirmed, recovered, deaths, lastUpdate },
+    } = await axios.get(stats);
     const modifiedData = {
       confirmed: data.confirmed,
       recovered: data.recovered,

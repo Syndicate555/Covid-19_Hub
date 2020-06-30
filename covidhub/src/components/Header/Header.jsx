@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <img
       style={{
-        width: "200px",
+        width: "400px",
         height: "60px",
         textAlign: "center",
         paddingTop: "20px",
