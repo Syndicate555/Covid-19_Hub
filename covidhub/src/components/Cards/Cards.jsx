@@ -8,7 +8,14 @@ const Cards = (props) => {
       <Grid container spacing={3} justify="center">
         <Grid item component={Card}>
           <CardContent>
-            <Typography></Typography>
+            <Typography color="textSecondary" gutterBottom>
+              Infected
+            </Typography>
+            <Typography variant="h5">Data</Typography>
+            <Typography color="textSecondary">Date</Typography>
+            <Typography variant="body2">
+              Number of active COVID-19 cases
+            </Typography>
           </CardContent>
         </Grid>
       </Grid>
