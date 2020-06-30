@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: OstrichSans-Heavy
+font link: https://www.fontsquirrel.com/fonts/ostrich-sans
+font author: Tyler Finck
+font author site: https://www.tylerfinck.com
+
+
+icon designer: Ben Davis
+icon designer link: /smashicons
+        
+
+fontColor: {"gradient-0":"#3A7FE8","gradient-1":"#63A168"}
+bgColor: {"hex":"#E9ECFC"}
+iconColor: {"gradient-0":"#3A7FE8","gradient-1":"#63A168"}
+
+      
