@@ -7,15 +7,23 @@ import CountryPicker from "./components/CountryPicker/CountryPicker";
 import { fetchData } from "./api";
 
 class App extends React.Component {
+  // declare app state
+  state = {
+    data: {},
+  };
   async componentDidMount() {
-    const data = await fetchData();
-    console.log(data);
+    const fetchedData = await fetchData();
+    this.setState({ data: fetchedData });
+    console.log(fetchedData);
   }
   render() {
+    // destructure the data
+
+    const { data } = this.state;
     return (
       <div className="container">
         <Header />
-        <Cards />
+        <Cards data={data} />
         <CountryPicker />
         <Chart />
       </div>
