@@ -12,8 +12,8 @@ class App extends React.Component {
     data: {},
   };
   async componentDidMount() {
-    const fetchedData = await fetchData();
-    this.setState({ data: fetchedData });
+    const data = await fetchData();
+    this.setState({ data });
   }
   render() {
     // destructure the data
