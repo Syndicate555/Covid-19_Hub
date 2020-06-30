@@ -12,6 +12,7 @@ const Header = () => {
         paddingRight: "20px",
       }}
       src={Logo}
+      alt=""
     ></img>
   );
 };

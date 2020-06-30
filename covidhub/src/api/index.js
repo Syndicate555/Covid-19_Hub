@@ -9,10 +9,10 @@ export const fetchData = async () => {
       data: { confirmed, recovered, deaths, lastUpdate },
     } = await axios.get(stats);
     const modifiedData = {
-      confirmed: data.confirmed,
-      recovered: data.recovered,
-      deaths: data.deaths,
-      lastUpdate: data.lastUpdate,
+      confirmed: confirmed,
+      recovered: recovered,
+      deaths: deaths,
+      lastUpdate: lastUpdate,
     };
 
     const countryData = await axios.get(country);
