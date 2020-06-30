@@ -6,7 +6,13 @@ import CountryPicker from "./components/Cards/CountryPicker";
 
 class App extends React.Component {
   render() {
-    return <div>Hello World</div>;
+    return (
+      <div>
+        <Cards />
+        <CountryPicker />
+        <Chart />
+      </div>
+    );
   }
 }
 
