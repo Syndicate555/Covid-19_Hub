@@ -27,7 +27,14 @@ class App extends React.Component {
         <br></br>
         <br></br>
         <Cards data={data} />
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <CountryPicker />
+        <br />
+        <br />
+        <br />
         <Chart />
         <br />
         <br />

@@ -4,18 +4,21 @@ import styles from "./CountryPicker.module.css";
 import { countries } from "../../api";
 
 const CountryPicker = () => {
-  const [fetchCountries, setFetchedCountries] = useState([]);
+  const [fetchedCountries, setFetchedCountries] = useState([]);
   useEffect(() => {
     const fetchCountries = async () => {
       setFetchedCountries(await countries);
     };
-  });
-  return;
-  <FormControl className={styles.formControl}>
-    <NativeSelect>
-      <option value="global">Global</option>
-    </NativeSelect>
-  </FormControl>;
+
+    fetchCountries();
+  }, [setFetchedCountries]);
+  return (
+    <FormControl className={styles.formControl}>
+      <NativeSelect>
+        <option value="global">Global</option>
+      </NativeSelect>
+    </FormControl>
+  );
 };
 
 export default CountryPicker;
