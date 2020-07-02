@@ -13,11 +13,22 @@ const CountryPicker = () => {
     fetchAPI();
   }, [setFetchedCountries]);
   return (
-    <FormControl className={styles.formControl}>
-      <NativeSelect>
-        <option value="global">Global</option>
-      </NativeSelect>
-    </FormControl>
+    <div>
+      <div>
+        <h3>Pick a Country to visualize it's covid-19 data</h3>
+      </div>
+
+      <FormControl className={styles.formControl}>
+        <NativeSelect>
+          <option value="global">Global</option>
+          {fetchedCountries.map((country, i) => (
+            <option key={i} value={country}>
+              {country}
+            </option>
+          ))}
+        </NativeSelect>
+      </FormControl>
+    </div>
   );
 };
 
