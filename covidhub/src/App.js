@@ -17,6 +17,10 @@ class App extends React.Component {
     const data = await fetchData();
     this.setState({ data });
   }
+
+  handleCountryChange = async (country) => {
+    console.log(country);
+  };
   render() {
     // destructure the data
 
@@ -32,7 +36,7 @@ class App extends React.Component {
         <br></br>
         <br></br>
         <br></br>
-        <CountryPicker />
+        <CountryPicker handleCountryChange={this.handleCountryChange} />
         <br />
         <br />
         <br />
