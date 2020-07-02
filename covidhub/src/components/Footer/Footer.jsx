@@ -1,9 +1,8 @@
 import React from "react";
-import style from "./recipe.module.css";
 
-function Footer(props) {
+function Footer() {
   return (
-    <footer className={style.footer}>
+    <footer className={{ textAlign: "center" }}>
       Created by <a href="https://www.saffataziz.site/"> Saffat Aziz</a>
     </footer>
   );
