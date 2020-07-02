@@ -20,11 +20,12 @@ const Chart = () => {
           {
             data: dailyData.map(({ confirmed }) => confirmed),
             label: "Infected",
-            borderColor: "#3333ff",
+            borderColor: "#fcad03",
+            backgroundColor: " rgba(252, 173, 3, 0.36)",
             fill: true,
           },
           {
-            data: dailyData.map(({ confirmed }) => confirmed),
+            data: dailyData.map(({ deaths }) => deaths),
             label: "Deaths",
             borderColor: "red",
             backgroundColor: "rgba(255, 0, 0, 0.5)",
