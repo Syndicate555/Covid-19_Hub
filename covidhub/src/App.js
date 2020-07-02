@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Cards from "./components/Cards/Cards";
 import Chart from "./components/Chart/Chart";
+import Footer from "./components/Footer/Footer";
 import CountryPicker from "./components/CountryPicker/CountryPicker";
 import { fetchData } from "./api";
 
@@ -28,6 +29,12 @@ class App extends React.Component {
         <Cards data={data} />
         <CountryPicker />
         <Chart />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Footer />
       </div>
     );
   }
