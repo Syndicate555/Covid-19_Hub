@@ -4,7 +4,11 @@ function Footer() {
   return (
     <footer className={{ textAlign: "center" }}>
       Created by{" "}
-      <a href="https://www.saffataziz.site/" target="_blank">
+      <a
+        href="https://www.saffataziz.site/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         {" "}
         Saffat Aziz
       </a>
