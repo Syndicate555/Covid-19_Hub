@@ -13,3 +13,8 @@ export const fetchData = async () => {
     console.log(error);
   }
 };
+
+export const fetchDailyData = async () => {
+  try {
+  } catch (error) {}
+};
