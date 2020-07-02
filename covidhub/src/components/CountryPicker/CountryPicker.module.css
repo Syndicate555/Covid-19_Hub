@@ -1,9 +1,10 @@
 .formControl {
-  width: 110%;
+  width: 105%;
   margin-bottom: 30px !important;
   text-align: center;
 }
-h3 {
+h2 {
   text-align: left;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #3d64cf;
 }

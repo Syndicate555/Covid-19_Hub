@@ -15,7 +15,7 @@ const CountryPicker = () => {
   return (
     <div>
       <div>
-        <h3>Pick a Country to visualize it's covid-19 data</h3>
+        <h2>Pick a Country to visualize it's covid-19 data</h2>
       </div>
       <br></br>
       <br></br>
