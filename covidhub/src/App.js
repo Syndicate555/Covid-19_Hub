@@ -25,7 +25,7 @@ class App extends React.Component {
   render() {
     // destructure the data
 
-    const { data } = this.state;
+    const { data, country } = this.state;
     return (
       <div className="container">
         <Header />
@@ -41,7 +41,7 @@ class App extends React.Component {
         <br />
         <br />
         <br />
-        <Chart />
+        <Chart data={data} country={country} />
         <br />
         <br />
         <br />
