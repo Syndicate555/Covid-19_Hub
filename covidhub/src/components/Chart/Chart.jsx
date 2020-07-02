@@ -9,7 +9,7 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
       setDailyData(await fetchDailyData());
     };
     fetchAPI();
-  });
+  }, []);
 
   // first wait for the data to be fetched from the API, then return the result. Until then, return null
   const lineChart = dailyData.length ? (
