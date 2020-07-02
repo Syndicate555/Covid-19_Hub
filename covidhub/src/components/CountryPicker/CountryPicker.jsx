@@ -17,7 +17,8 @@ const CountryPicker = () => {
       <div>
         <h3>Pick a Country to visualize it's covid-19 data</h3>
       </div>
-
+      <br></br>
+      <br></br>
       <FormControl className={styles.formControl}>
         <NativeSelect>
           <option value="global">Global</option>
